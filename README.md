@@ -58,3 +58,8 @@ Now you can test the model by running the detect.py script where arguments were 
 -weights runs/train/yolov5s_results/weights/last.pt --img 416 --conf 0.4 --source ../test/videos --save-txt
 For above arguments, weights path location may or may not differ for you, if the objects are not getting detected for your custom object problem, you can try to minimize the confidence threshold (--conf 0.2 or 0.1), smyce will act as ymy test location path and lastly, --save-txt will save the labels for the videos contained in the smyce path.
 If my testing code cell was successful, then the results will be saved in ‘yolov5/runs/detect/exp’ and we can download the generated inference video by going to the above path and downloading it manually or we can download the whole folder by zip method as shown in code 23 of our notebook. The zip file will contain the inference videos and their related labels.
+
+### Dashboard Visualization
+
+Dashboard was created in Google Data Studio where the elements includes: embedded inference video and it's related class distribution in the form of pie chart, most optimal live object counter for frame 208 shown as a picture and it's related details (label, distance, record count) in tabular format.
+Link for the Dashboard can be found at https://datastudio.google.com/s/lytisJX5Tis
